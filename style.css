@@ -1,0 +1,193 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header/Navbar Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d70000; /* Zomato Red */
+    padding: 10px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Smaller Logo in Navbar */
+.logo img {
+    height: 40px; /* Reduced size */
+}
+
+/* Navbar Links */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ffcccb; /* Light Red */
+}
+
+/* Hero Section */
+.hero {
+    background: url('../img/zomato.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img {
+    width: 250px;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero p {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Search Box */
+input {
+    width: 50%;
+    max-width: 600px;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+    background-color: #ffecec;
+    border: 2px solid #d70000;
+}
+
+/* Food Delivery Section */
+.food-delivery {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.food-delivery h2 {
+    font-size: 28px;
+    color: #d70000;
+    margin-bottom: 20px;
+}
+
+.food-delivery p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.feature-box {
+    text-align: center;
+    width: 250px;
+}
+
+.feature-box img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    color: #d70000;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Button */
+.btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    background-color: #d70000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #b30000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #d70000; /* Footer in red */
+    color: white;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
