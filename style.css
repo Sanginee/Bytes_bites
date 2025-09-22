@@ -1,7 +1,6 @@
-/* Import Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Reset and General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,6 @@ body {
     color: #333;
 }
 
-/* Header/Navbar Styling */
 header {
     display: flex;
     justify-content: space-between;
@@ -28,12 +26,10 @@ header {
     z-index: 100;
 }
 
-/* Smaller Logo in Navbar */
 .logo img {
-    height: 40px; /* Reduced size */
+    height: 40px; 
 }
 
-/* Navbar Links */
 ul {
     list-style: none;
     display: flex;
@@ -52,10 +48,9 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #ffcccb; /* Light Red */
+    color: #ffcccb;
 }
 
-/* Hero Section */
 .hero {
     background: url('../img/zomato.png') no-repeat center center/cover;
     height: 100vh;
@@ -81,7 +76,6 @@ ul li a:hover {
     animation: slideUp 1s ease-in-out;
 }
 
-/* Search Box */
 input {
     width: 50%;
     max-width: 600px;
@@ -100,8 +94,6 @@ input:focus {
     background-color: #ffecec;
     border: 2px solid #d70000;
 }
-
-/* Food Delivery Section */
 .food-delivery {
     padding: 60px 20px;
     text-align: center;
@@ -121,7 +113,6 @@ input:focus {
     margin: 0 auto 30px;
 }
 
-/* Features */
 .features {
     display: flex;
     justify-content: center;
@@ -145,7 +136,6 @@ input:focus {
     margin-bottom: 10px;
 }
 
-/* Button */
 .btn {
     padding: 12px 25px;
     border-radius: 30px;
@@ -161,8 +151,6 @@ input:focus {
 .btn:hover {
     background-color: #b30000;
 }
-
-/* Footer */
 footer {
     text-align: center;
     padding: 15px;
@@ -171,7 +159,6 @@ footer {
     font-size: 14px;
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -191,3 +178,4 @@ footer {
         transform: translateY(0);
     }
 }
+
