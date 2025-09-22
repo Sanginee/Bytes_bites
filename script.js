@@ -1,16 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Allow navigation for actual links, block only placeholder links
+  
     document.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", function (event) {
             const href = this.getAttribute("href");
-            if (href === "#" || href === "") {  // Blocks only placeholder links
+            if (href === "#" || href === "") {
                 event.preventDefault();
                 alert("Feature coming soon!");
             }
         });
     });
-
-    // Search bar focus effect
     const searchInput = document.querySelector("input");
     if (searchInput) {
         searchInput.addEventListener("focus", function () {
@@ -22,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Fade-in effect for the main content
     const mainContent = document.querySelector("main img");
     if (mainContent) {
         mainContent.style.opacity = 0;
@@ -34,3 +31,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 500);
     }
 });
+
